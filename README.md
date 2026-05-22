@@ -1,8 +1,8 @@
 # langage-clair-fr
 
-Skill pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans avoir à relire ni demander de l'aide.
+Règles d'écriture en français pour produire des textes que des lecteurs non-experts comprennent **à la première lecture**, sans avoir à relire ni demander de l'aide.
 
-Croise quatre référentiels :
+Le fichier [`SKILL.md`](./SKILL.md) croise quatre référentiels publics :
 
 - **FALC** : Facile à Lire et à Comprendre (Inclusion Europe, UNAPEI)
 - **Langage Clair** : DITP / modernisation.gouv.fr
@@ -11,16 +11,16 @@ Croise quatre référentiels :
 
 ## À qui ça s'adresse
 
-Le skill est pensé pour les contextes où la clarté du texte est une **question d'équité d'accès**, pas un choix stylistique :
+Pensé pour les contextes où la clarté du texte est une **question d'équité d'accès**, pas un choix stylistique :
 
 - Droit du travail, droits sociaux, démarches administratives
 - Santé, éducation, services publics
 - UI, emails transactionnels, FAQ pour grand public
 - Vulgarisation de textes juridiques ou techniques
 
-Il ne s'applique **pas** à la doc dev interne, au marketing à effet stylistique, ni à la poésie.
+Ne s'applique **pas** à la doc dev interne, au marketing à effet stylistique, ni à la poésie.
 
-## Ce que le skill contient
+## Ce que le document contient
 
 - 10 règles non-négociables (une idée par phrase, voix active, verbes plutôt que noms, etc.)
 - Un lexique de substitution **bureaucratique vers clair** (environ 25 entrées)
@@ -30,36 +30,51 @@ Il ne s'applique **pas** à la doc dev interne, au marketing à effet stylistiqu
 - Une méthode pas-à-pas pour reformuler un texte existant
 - Les cas où il faut **déroger** (citation littérale, termes juridiques précis, voix de marque)
 
-## Installation comme skill Claude Code
+## Utilisation
 
-Un *skill* Claude Code est un fichier markdown auto-chargé quand le contexte de conversation déclenche sa description. Pour l'installer en global (utilisable dans n'importe quel projet) :
+Le fichier `SKILL.md` est un document markdown autonome, indépendant de tout outil. Trois usages possibles.
 
-```bash
-# macOS / Linux
-mkdir -p ~/.claude/skills/langage-clair-fr
-cp SKILL.md ~/.claude/skills/langage-clair-fr/
-```
+### 1. Charger dans un assistant IA de code
 
-```powershell
-# Windows
-New-Item -ItemType Directory -Force "$HOME\.claude\skills\langage-clair-fr"
-Copy-Item SKILL.md "$HOME\.claude\skills\langage-clair-fr\"
-```
+La plupart des assistants IA supportent le chargement de fichiers de règles externes. Quelques chemins connus :
 
-Claude détecte le skill à la prochaine session et le déclenche automatiquement sur les tâches de copy FR user-facing.
+| Outil | Emplacement |
+|---|---|
+| Aider | `aider --read SKILL.md`, ou clé `read:` dans `.aider.conf.yml` |
+| Claude Code | `~/.claude/skills/langage-clair-fr/SKILL.md` |
+| Codex CLI (OpenAI) | inclure le contenu dans le fichier `AGENTS.md` à la racine du projet |
+| Continue.dev | référencer le fichier dans la section `rules` de `~/.continue/config.json` |
+| Cursor | `.cursor/rules/langage-clair-fr.mdc` à la racine du projet |
 
-Pour un usage **projet-only** : placer le fichier dans `.claude/skills/langage-clair-fr/SKILL.md` à la racine du repo.
+Consulter la documentation de l'outil pour la syntaxe de chargement exacte. La syntaxe évolue : ces chemins sont indicatifs.
 
-## Usage sans Claude Code
+### 2. Comme prompt système d'une interface chat
 
-Le contenu de [`SKILL.md`](./SKILL.md) sert aussi de mémo autonome. Trois usages possibles :
+Coller le contenu de `SKILL.md` dans :
 
-- L'imprimer comme cheat-sheet de relecture
-- Le coller en pré-prompt dans n'importe quel chatbot
-- S'en servir comme grille de revue pour une équipe rédaction
+- Le champ « Instructions » d'un GPT personnalisé (ChatGPT) ou d'un Projet (Claude.ai, Le Chat de Mistral)
+- Le system prompt d'une intégration API (OpenAI, Anthropic, Mistral, Gemini, Llama, etc.)
+- Le premier message d'une conversation, en précisant : « Voici les règles à appliquer dans nos échanges. »
+
+Le contenu fonctionne avec n'importe quel modèle suffisamment compétent en français.
+
+### 3. Comme document autonome
+
+- Imprimer comme cheat-sheet de relecture
+- Servir de grille de revue pour une équipe rédaction
+- Citer ou adapter dans un guide interne de rédaction
 
 ## Licence
 
 [MIT](./LICENSE). Réutilisation libre, attribution requise (conservation de la mention de copyright et du texte de licence dans toute redistribution).
 
 Les référentiels cités (FALC, Langage Clair DITP, Plain Language, Flesch FR) sont des biens publics ou des standards ouverts.
+
+## Contribuer
+
+Issues et pull requests bienvenues, en particulier pour :
+
+- Compléter le lexique de substitution
+- Ajouter des anti-patterns rencontrés en production
+- Corriger des erreurs ou imprécisions sur les référentiels cités
+- Traduire ou adapter pour d'autres langues
