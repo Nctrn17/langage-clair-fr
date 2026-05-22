@@ -1,6 +1,6 @@
 # langage-clair-fr
 
-Skill [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans avoir à relire ni demander de l'aide.
+Skill pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans avoir à relire ni demander de l'aide.
 
 Croise quatre référentiels :
 
