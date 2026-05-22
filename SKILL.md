@@ -1,9 +1,9 @@
 ---
 name: langage-clair-fr
-description: Écriture FR accessible pour publics non-experts (salariés, ayants droit, demandeurs, personnes en situation de handicap cognitif, public administratif). Croise FALC (Inclusion Europe / UNAPEI), Langage Clair (DITP / modernisation.gouv.fr), Plain Language internationale et la recherche en lisibilité (Flesch FR adapté Kandel-Moles). À déclencher quand on écrit, relit ou modifie du texte FR user-facing — libellés UI, emails transactionnels, FAQ, messages d'erreur, copy onboarding, vulgarisation administrative ou juridique. Ne pas déclencher sur la doc dev interne, le marketing à effet stylistique, la poésie.
+description: Écriture FR accessible pour publics non-experts (salariés, ayants droit, demandeurs, personnes en situation de handicap cognitif, public administratif). Croise FALC (Inclusion Europe / UNAPEI), Langage Clair (DITP / modernisation.gouv.fr), Plain Language internationale et la recherche en lisibilité (Flesch FR adapté Kandel-Moles). À déclencher quand on écrit, relit ou modifie du texte FR user-facing : libellés UI, emails transactionnels, FAQ, messages d'erreur, copy onboarding, vulgarisation administrative ou juridique. Ne pas déclencher sur la doc dev interne, le marketing à effet stylistique, la poésie.
 ---
 
-# Langage clair FR — règles d'écriture accessible
+# Langage clair FR : règles d'écriture accessible
 
 Outil pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans devoir relire ni demander de l'aide. S'applique en priorité aux secteurs où le langage clair est une question d'**équité d'accès** : droit du travail, droits sociaux, démarches administratives, santé, éducation, services aux usagers.
 
@@ -26,7 +26,7 @@ Outil pour écrire en français des textes que des lecteurs non-experts comprenn
 
 | Source | Origine | Apport principal |
 |---|---|---|
-| **FALC** — Facile à Lire et à Comprendre | Inclusion Europe, UNAPEI (FR), standard EU | Méthodologie d'écriture pour public en situation de handicap cognitif. Validée par des "relecteurs" co-concepteurs. Règles strictes sur syntaxe et vocabulaire. |
+| **FALC** : Facile à Lire et à Comprendre | Inclusion Europe, UNAPEI (FR), standard EU | Méthodologie d'écriture pour public en situation de handicap cognitif. Validée par des "relecteurs" co-concepteurs. Règles strictes sur syntaxe et vocabulaire. |
 | **Langage Clair** | DITP / modernisation.gouv.fr | Adaptation française du Plain Language. Pour réécrire le langage administratif. Focus : démarche citoyenne. |
 | **Plain Language** | International (PLAIN, plainlanguage.gov, Inkpot UK) | Tradition anglo-saxonne. Recherche empirique sur la compréhension. |
 | **Flesch FR (Kandel-Moles 1958)** | Recherche linguistique | Score quantitatif de lisibilité, adapté du Flesch-Kincaid pour le français. Outil web : **scolarius.com**. |
@@ -40,7 +40,7 @@ Outil pour écrire en français des textes que des lecteurs non-experts comprenn
 
 ✅ « Joignez votre fiche de paie. Elle doit être lisible et dater de moins de 3 mois. Si vous êtes en CDD, votre contrat suffit. »
 
-### 2. Phrase courte — viser 15 mots, plafonner à 20
+### 2. Phrase courte : viser 15 mots, plafonner à 20
 
 Au-delà de 25 mots, la phrase devient difficile à mémoriser pendant la lecture. Couper aux conjonctions (« et », « mais », « car », « parce que », « cependant »).
 
@@ -52,7 +52,7 @@ Au-delà de 25 mots, la phrase devient difficile à mémoriser pendant la lectur
 
 La voix passive masque qui fait quoi. En administration française, c'est endémique.
 
-### 4. Verbes plutôt que noms — pas de nominalisations administratives
+### 4. Verbes plutôt que noms : pas de nominalisations administratives
 
 ❌ « la réalisation de votre démarche », « la mise en œuvre du dispositif », « l'application des règles »
 
@@ -60,7 +60,7 @@ La voix passive masque qui fait quoi. En administration française, c'est endém
 
 Une nominalisation transforme un verbe en nom abstrait. Elle vide la phrase de son sujet et de son temps.
 
-### 5. Vocabulaire concret — pas de jargon, pas de figures
+### 5. Vocabulaire concret : pas de jargon, pas de figures
 
 - Pas de métaphores (« naviguer dans votre espace », « franchir une étape »)
 - Pas d'abstractions vagues (« dans le cadre de », « au titre de », « à ce stade »)
@@ -69,7 +69,7 @@ Une nominalisation transforme un verbe en nom abstrait. Elle vide la phrase de s
 
 ### 6. Cohérence terminologique
 
-Mêmes mots pour mêmes choses, **toujours**. Si tu commences à parler de « votre fiche de paie », ne bascule pas en cours de page sur « bulletin de salaire » ou « relevé de paie ». La variation stylistique tue la compréhension.
+Mêmes mots pour mêmes choses, **toujours**. Si la page commence à parler de « votre fiche de paie », ne pas basculer en cours de page sur « bulletin de salaire » ou « relevé de paie ». La variation stylistique tue la compréhension.
 
 ### 7. Présent de l'indicatif
 
@@ -85,15 +85,15 @@ Mêmes mots pour mêmes choses, **toujours**. Si tu commences à parler de « vo
 
 ### 9. Adresse personnelle directe
 
-Choisir et tenir : **vous** (administratif neutre, le plus courant), **tu** (proximité, à éviter en B2C grand public sauf jeunesse), **on** + **vous** (notre service + l'utilisateur, registre moderne — beta.gouv.fr, Pass Culture).
+Choisir et tenir : **vous** (administratif neutre, le plus courant), **tu** (proximité, à éviter en B2C grand public sauf jeunesse), **on** + **vous** (notre service + l'utilisateur, registre moderne, par exemple beta.gouv.fr ou Pass Culture).
 
-Pas de « le bénéficiaire », « l'usager », « le demandeur » à la troisième personne — c'est froid et déresponsabilisant.
+Pas de « le bénéficiaire », « l'usager », « le demandeur » à la troisième personne : c'est froid et déresponsabilisant.
 
 ### 10. Listes plutôt que paragraphes denses
 
 Une énumération de plus de 2 éléments → liste à puces. Surtout pour les pièces à fournir, les étapes à suivre, les conditions à remplir.
 
-## Lexique de substitution — bureaucratique → clair
+## Lexique de substitution : bureaucratique → clair
 
 | ❌ Tournure administrative | ✅ Équivalent clair |
 |---|---|
@@ -150,7 +150,7 @@ Une énumération de plus de 2 éléments → liste à puces. Surtout pour les p
 
 ### Le double sens du "ou"
 
-« Pour les salariés du privé ou du public et leurs ayants droit » — ambigu : et/ou ?
+« Pour les salariés du privé ou du public et leurs ayants droit » : ambigu, et/ou ?
 
 ✅ Reformuler explicitement : « Pour les salariés du privé. Pour les salariés du public. Pour leurs ayants droit. »
 
@@ -164,7 +164,7 @@ Une énumération de plus de 2 éléments → liste à puces. Surtout pour les p
 ❌ « le 1er trimestre de 2026 »
 ✅ « entre janvier et mars 2026 » (préférer le mot quand on parle d'une période)
 
-## Checklist rapide — passer chaque libellé à travers
+## Checklist rapide : passer chaque libellé à travers
 
 À chaque libellé UI / message / paragraphe à publier :
 
@@ -212,7 +212,7 @@ Pour les organisations sociales et publiques, un panel de relecteurs FALC peut �
 ## Quand DÉROGER
 
 - **Citation littérale d'un texte de loi** : on cite tel quel, on vulgarise à côté.
-- **Termes juridiques précis qui ont des conséquences** : si « rupture conventionnelle » et « démission » ont des conséquences différentes, on garde les deux termes — on les explique.
+- **Termes juridiques précis qui ont des conséquences** : si « rupture conventionnelle » et « démission » ont des conséquences différentes, on garde les deux termes, et on les explique.
 - **Voix de marque assumée** : un acteur jeunesse peut tutoyer, une marque éditoriale peut allonger une phrase pour le rythme. Conscience > réflexe.
 - **Public d'experts** : la simplification entre soi (médecins entre médecins, juristes entre juristes) tue la précision.
 
@@ -229,13 +229,13 @@ Quand un texte existant est à simplifier :
 
 ## Sources & lectures
 
-- **UNAPEI — Information pour tous** : [unapei.org](https://www.unapei.org) → ressources FALC
-- **Inclusion Europe — Information for all** : manuel européen de référence FALC
-- **DITP — Plan langage clair** : [modernisation.gouv.fr](https://www.modernisation.gouv.fr) (chercher « langage clair »)
-- **Scolarius** : [scolarius.com](https://scolarius.com) — score de lisibilité FR instantané
+- **UNAPEI, Information pour tous** : [unapei.org](https://www.unapei.org), ressources FALC
+- **Inclusion Europe, Information for all** : manuel européen de référence FALC
+- **DITP, Plan langage clair** : [modernisation.gouv.fr](https://www.modernisation.gouv.fr) (chercher « langage clair »)
+- **Scolarius** : [scolarius.com](https://scolarius.com). Score de lisibilité FR instantané.
 - **plainlanguage.gov** : référentiel Plain Language US, principes transposables
-- **PLAIN — Plain Language Action and Information Network** : standards internationaux
-- **LanguageTool** : [languagetool.org](https://languagetool.org) — vérif grammaire + style en FR, plugins éditeurs
+- **PLAIN, Plain Language Action and Information Network** : standards internationaux
+- **LanguageTool** : [languagetool.org](https://languagetool.org). Vérif grammaire + style en FR, plugins éditeurs.
 - **Antidote** (payant) : section « Lisibilité »
-- Recherche : Kandel & Moles (1958) — adaptation Flesch pour le français
+- Recherche : Kandel & Moles (1958), adaptation Flesch pour le français
 - Recherche : Mesnager (2002) sur la lisibilité scolaire FR

@@ -1,13 +1,13 @@
 # langage-clair-fr
 
-Skill [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans devoir relire ni demander de l'aide.
+Skill [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) pour écrire en français des textes que des lecteurs non-experts comprennent **à la première lecture**, sans avoir à relire ni demander de l'aide.
 
 Croise quatre référentiels :
 
-- **FALC** — Facile à Lire et à Comprendre (Inclusion Europe, UNAPEI)
-- **Langage Clair** — DITP / modernisation.gouv.fr
-- **Plain Language** — tradition anglo-saxonne (PLAIN, plainlanguage.gov)
-- **Flesch FR** — formule de lisibilité Kandel-Moles (1958)
+- **FALC** : Facile à Lire et à Comprendre (Inclusion Europe, UNAPEI)
+- **Langage Clair** : DITP / modernisation.gouv.fr
+- **Plain Language** : tradition anglo-saxonne (PLAIN, plainlanguage.gov)
+- **Flesch FR** : formule de lisibilité Kandel-Moles (1958)
 
 ## À qui ça s'adresse
 
@@ -15,7 +15,7 @@ Le skill est pensé pour les contextes où la clarté du texte est une **questio
 
 - Droit du travail, droits sociaux, démarches administratives
 - Santé, éducation, services publics
-- UI / emails transactionnels / FAQ pour grand public
+- UI, emails transactionnels, FAQ pour grand public
 - Vulgarisation de textes juridiques ou techniques
 
 Il ne s'applique **pas** à la doc dev interne, au marketing à effet stylistique, ni à la poésie.
@@ -23,7 +23,7 @@ Il ne s'applique **pas** à la doc dev interne, au marketing à effet stylistiqu
 ## Ce que le skill contient
 
 - 10 règles non-négociables (une idée par phrase, voix active, verbes plutôt que noms, etc.)
-- Un lexique de substitution **bureaucratique → clair** (≈ 25 entrées)
+- Un lexique de substitution **bureaucratique vers clair** (environ 25 entrées)
 - Une liste d'anti-patterns FR fréquents
 - Une checklist de 10 points à passer sur chaque libellé
 - La formule Flesch FR + grille de niveaux (cible publique : F ≥ 70)
@@ -46,20 +46,20 @@ New-Item -ItemType Directory -Force "$HOME\.claude\skills\langage-clair-fr"
 Copy-Item SKILL.md "$HOME\.claude\skills\langage-clair-fr\"
 ```
 
-Claude détectera le skill à la prochaine session et le déclenchera automatiquement sur les tâches de copy FR user-facing.
+Claude détecte le skill à la prochaine session et le déclenche automatiquement sur les tâches de copy FR user-facing.
 
 Pour un usage **projet-only** : placer le fichier dans `.claude/skills/langage-clair-fr/SKILL.md` à la racine du repo.
 
 ## Usage sans Claude Code
 
-Le contenu de [`SKILL.md`](./SKILL.md) est aussi lisible comme un mémo autonome. Tu peux :
+Le contenu de [`SKILL.md`](./SKILL.md) sert aussi de mémo autonome. Trois usages possibles :
 
 - L'imprimer comme cheat-sheet de relecture
 - Le coller en pré-prompt dans n'importe quel chatbot
-- T'en servir comme grille de revue pour une équipe rédaction
+- S'en servir comme grille de revue pour une équipe rédaction
 
 ## Licence
 
-[MIT](./LICENSE). Réutilisable librement, attribution appréciée mais pas exigée.
+[MIT](./LICENSE). Réutilisation libre, attribution requise (conservation de la mention de copyright et du texte de licence dans toute redistribution).
 
 Les référentiels cités (FALC, Langage Clair DITP, Plain Language, Flesch FR) sont des biens publics ou des standards ouverts.
